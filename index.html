@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Pley | Digital Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050214; color: #ffffff; font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; scroll-behavior: smooth; }
+        .glow-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: radial-gradient(circle at 80% 20%, rgba(123, 31, 162, 0.15) 0%, transparent 40%), radial-gradient(circle at 20% 80%, rgba(33, 150, 243, 0.1) 0%, transparent 40%); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #ffffff, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <nav class="sticky top-0 z-50 glass px-6 py-4 mx-4 mt-4 rounded-2xl flex justify-between items-center">
+        <div class="font-extrabold text-xl tracking-tight italic text-purple-500">STUDIO PLEY</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#services" class="hover:text-white transition">Services</a>
+            <a href="#works" class="hover:text-white transition">Works</a>
+            <a href="#faq" class="hover:text-white transition">FAQ</a>
+        </div>
+        <a href="https://wa.me/yournumber" class="bg-purple-600 px-5 py-2 rounded-full text-sm font-bold">Contact</a>
+    </nav>
+
+    <section id="about" class="container mx-auto px-6 pt-24 pb-32 grid md:grid-cols-2 gap-10 items-center">
+        <div class="space-y-6">
+            <h1 class="text-6xl font-black text-gradient leading-none">Making <br>Magic Happen.</h1>
+            <p class="text-gray-400 text-lg leading-relaxed">Kami adalah Studio Pley. Sebuah rumah produksi digital yang menggabungkan seni visual dengan teknologi tercanggih untuk menciptakan pengalaman luar biasa.</p>
+            <div class="flex gap-10 pt-4">
+                <div><h3 class="text-3xl font-bold">120+</h3><p class="text-gray-500 text-sm">Proyek Selesai</p></div>
+                <div><h3 class="text-3xl font-bold">50+</h3><p class="text-gray-500 text-sm">Klien Senang</p></div>
+            </div>
+        </div>
+        <div class="relative flex justify-center">
+            <div class="w-80 h-96 bg-purple-500/20 rounded-full blur-3xl absolute"></div>
+            <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=800" class="w-80 rounded-[3rem] shadow-2xl relative z-10 border border-white/20">
+        </div>
+    </section>
+
+    <section id="services" class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black">Our Services</h2>
+            <p class="text-gray-500">Solusi digital yang kami tawarkan</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-purple-600 rounded-xl mb-6"></div>
+                <h4 class="text-xl font-bold mb-2">Web Design</h4>
+                <p class="text-gray-400 text-sm">Website modern yang responsif dan memukau mata pengunjung.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl mb-6"></div>
+                <h4 class="text-xl font-bold mb-2">Branding</h4>
+                <p class="text-gray-400 text-sm">Membangun identitas brand yang kuat dan sulit dilupakan.</p>
+            </div>
+            <div class="glass p-10 rounded-3xl">
+                <div class="w-12 h-12 bg-pink-600 rounded-xl mb-6"></div>
+                <h4 class="text-xl font-bold mb-2">3D Motion</h4>
+                <p class="text-gray-400 text-sm">Animasi 3D untuk presentasi produk yang lebih profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-20 bg-white/5 rounded-[3rem]">
+        <div class="max-w-2xl mx-auto text-center">
+            <p class="text-2xl italic font-light">"Bekerja dengan Studio Pley adalah keputusan terbaik kami. Hasil desain mereka sangat futuristik dan pengerjaannya sangat cepat!"</p>
+            <div class="mt-8">
+                <p class="font-bold">Aisyahh</p>
+                <p class="text-gray-500 text-sm">Full Stack Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container mx-auto px-6 py-32 max-w-4xl">
+        <h2 class="text-4xl font-black text-center mb-16">F.A.Q</h2>
+        <div class="space-y-4">
+            <details class="glass p-6 rounded-2xl cursor-pointer">
+                <summary class="font-bold">Berapa lama pengerjaan satu proyek?</summary>
+                <p class="mt-4 text-gray-400 text-sm">Tergantung kerumitan, biasanya berkisar antara 2 sampai 4 minggu.</p>
+            </details>
+            <details class="glass p-6 rounded-2xl cursor-pointer">
+                <summary class="font-bold">Apakah bisa kustom desain sesuai keinginan?</summary>
+                <p class="mt-4 text-gray-400 text-sm">Tentu saja! Kami sangat mengutamakan orisinalitas dalam setiap karya kami.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer class="text-center py-20 border-t border-white/10 mt-20">
+        <p class="text-purple-500 font-bold mb-4">STUDIO PLEY</p>
+        <p class="text-gray-600 text-xs tracking-widest uppercase">Subang, West Java &bull; 2026</p>
+    </footer>
+
+</body>
+</html>
